@@ -7,8 +7,9 @@
   box-sizing: border-box;
   width: 400px;
 }
+
 body {
-  background: #af97de;
+  background: #432499;
   justify-content: center;
   align-items: center;
 }
@@ -89,14 +90,15 @@ form {
 .btns {
   display: flex;
   flex-direction: row;
-  
+
   font-size: 23px;
   color: #404040;
-  
+
   text-decoration: none;
   margin-top: 90px;
   gap: 56px;
 }
+
 .btns .btn1 {
   text-align: center;
   font-size: 18px;
@@ -110,6 +112,7 @@ form {
   height: 58px;
   gap: 10px;
 }
+
 .btns .btn2 {
   text-align: center !important;
   font-size: 18px;
@@ -124,14 +127,17 @@ form {
   width: 93px;
   height: 56px;
 }
+
 .btn1:hover {
   transition: 0.5s;
   background: #9a7fd8;
 }
+
 .btn2:hover {
   transition: 0.5s;
   background: #cac4c4;
 }
+
 p {
   color: #4f4d54;
   font-weight: 700;
@@ -140,17 +146,19 @@ p {
   line-height: 28px;
   width: 414px;
 }
-@media screen and ( max-width: 1024px) { 
+
+@media screen and (max-width: 1024px) {
 
   * {
     margin: 0;
     padding: 0;
   }
-  
+
   * {
     box-sizing: border-box;
     width: 400px;
   }
+
   body {
     background: #af97de;
     justify-content: center;
@@ -166,7 +174,7 @@ p {
     margin: 100px auto 0px auto;
     background-color: #fcfaff;
     width: 100%;
-  
+
     font-size: 18px;
     justify-content: center !important;
     align-items: center !important;
@@ -183,7 +191,7 @@ p {
     background-color: #ffffff;
     font-family: "Space Grotesk";
   }
-  
+
   input#psw-new {
     width: 300px;
     border: 1px solid #ddd;
@@ -193,7 +201,7 @@ p {
     background-color: #ffffff;
     font-family: "Space Grotesk";
   }
-  
+
   input#psw-confirm-new {
     width: 300px;
     border: 1px solid #ddd;
@@ -203,7 +211,7 @@ p {
     background-color: #ffffff;
     font-family: "Space Grotesk";
   }
-  
+
   p {
     color: #4f4d54;
     font-weight: 700;
@@ -226,7 +234,8 @@ p {
     height: 58px;
     gap: 10px;
   }
-  .btns .btn2{
+
+  .btns .btn2 {
     margin-left: 20px;
   }
 
