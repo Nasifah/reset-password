@@ -7,8 +7,9 @@
   box-sizing: border-box;
   width: 400px;
 }
+
 body {
-  background: #af97de;
+  background: #432499;
   justify-content: center;
   align-items: center;
 }
@@ -18,7 +19,6 @@ div.container {
   padding-bottom: 150px;
   padding-left: 50px;
   padding-top: 100px;
-  margin: 100px auto 0px auto;
   background-color: #fcfaff;
   width: 130%;
 
@@ -49,16 +49,6 @@ b {
 }
 
 /* Full-width input fields */
-
-input#email {
-  width: 400px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  outline: 0;
-  padding: 15px !important;
-  background-color: #ffffff;
-  font-family: "Space Grotesk";
-}
 
 input#psw-new {
   width: 400px;
@@ -94,18 +84,21 @@ input [ type=password] {
 }*/
 
 form {
-  margin: 40px;
+  margin: 40px 0 40px 200px;
 }
 
 .btns {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+
   font-size: 23px;
   color: #404040;
-  padding-left: 150px;
+
   text-decoration: none;
-  margin: 40px 0 0 0;
+  margin-top: 90px;
   gap: 56px;
 }
+
 .btns .btn1 {
   text-align: center;
   font-size: 18px;
@@ -115,11 +108,11 @@ form {
   border: 1px solid #876ac4;
   border-radius: 4px;
   text-decoration: none;
-  margin-left: -130px;
   width: 96px;
   height: 58px;
   gap: 10px;
 }
+
 .btns .btn2 {
   text-align: center !important;
   font-size: 18px;
@@ -129,19 +122,22 @@ form {
   border: 1px solid #876ac4;
   border-radius: 4px;
   text-decoration: none !important;
-  margin-left: 50px;
+  margin-left: 70px;
   gap: 10px;
   width: 93px;
   height: 56px;
 }
+
 .btn1:hover {
   transition: 0.5s;
   background: #9a7fd8;
 }
+
 .btn2:hover {
   transition: 0.5s;
   background: #cac4c4;
 }
+
 p {
   color: #4f4d54;
   font-weight: 700;
@@ -150,17 +146,19 @@ p {
   line-height: 28px;
   width: 414px;
 }
-@media screen and ( max-width: 1024px) { 
+
+@media screen and (max-width: 1024px) {
 
   * {
     margin: 0;
     padding: 0;
   }
-  
+
   * {
     box-sizing: border-box;
     width: 400px;
   }
+
   body {
     background: #af97de;
     justify-content: center;
@@ -176,12 +174,12 @@ p {
     margin: 100px auto 0px auto;
     background-color: #fcfaff;
     width: 100%;
-  
+
     font-size: 18px;
     justify-content: center !important;
     align-items: center !important;
     border-radius: 10px;
-    margin-left: 50% !important;
+
   }
 
   input#email {
@@ -193,7 +191,7 @@ p {
     background-color: #ffffff;
     font-family: "Space Grotesk";
   }
-  
+
   input#psw-new {
     width: 300px;
     border: 1px solid #ddd;
@@ -203,7 +201,7 @@ p {
     background-color: #ffffff;
     font-family: "Space Grotesk";
   }
-  
+
   input#psw-confirm-new {
     width: 300px;
     border: 1px solid #ddd;
@@ -213,7 +211,7 @@ p {
     background-color: #ffffff;
     font-family: "Space Grotesk";
   }
-  
+
   p {
     color: #4f4d54;
     font-weight: 700;
@@ -232,10 +230,13 @@ p {
     border: 1px solid #876ac4;
     border-radius: 4px;
     text-decoration: none;
-    margin-left: -250px;
     width: 96px;
     height: 58px;
     gap: 10px;
+  }
+
+  .btns .btn2 {
+    margin-left: 20px;
   }
 
 }
