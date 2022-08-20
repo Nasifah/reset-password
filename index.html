@@ -15,45 +15,45 @@
     <script src="life..js"></script>
   </head>
   <body>
-    <form action="action_page.php">
-      <div class="container">
-        <h1>Reset Password</h1>
-        <p>Fill in to reset password</p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <div>
-          <label for="psw-new"><b>New password</b></label>
-          <br />
-          <input
-            type="password"
-            placeholder="Enter new password"
-            name="psw-new"
-            id="psw-new"
-            required
-          />
+    <main>
+      <form action="action_page.php">
+        <img src="./Shining cube.png" alt="Shining cube image" class="cube">
+        <div class="container">
+          <p class="reset">Reset Password</p>
+          <p id="reset">Fill in to reset password</p>
+          <div >
+            <div class="form">
+              <label for="psw-new"><b>New password</b></label>
+              <br />
+              <input
+                type="password"
+                placeholder="Enter new password"
+                name="psw-new"
+                id="psw-new"
+                required
+              />
+            </div>
+
+            <div class="form">
+              <label for="psw-confirm-new"><b>Confirm new password</b></label>
+              <br />
+              <input
+                type="password"
+                placeholder="Confirm new password"
+                name="psw-confirm-new"
+                id="psw-confirm-new"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="btns">
+            <a href="#" class="btn2">Cancel</a>
+            <a href="output.html" class="btn1">Reset</a>
+          </div>
         </div>
-        <br />
-        <br />
-        <div>
-          <label for="psw-confirm-new"><b>Confirm new password</b></label>
-          <br />
-          <input
-            type="password"
-            placeholder="Confirm new password"
-            name="psw-confirm-new"
-            id="psw-confirm-new"
-            required
-          />
-        </div>
-        <br />
-        <br />
-        <div class="btns">
-          <a href="#" class="btn2">Cancel</a>
-          <a href="output.html" class="btn1">Reset</a>
-        </div>
-      </div>
-    </form>
+        <img src="./Ellipse.png" alt="Ellipse image" class="ellipse">
+      </form>
+    </main>
   </body>
 </html>
