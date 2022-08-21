@@ -218,36 +218,33 @@ p {
 }
 
 @media (max-width: 550px) {
-
   .cube {
-top: 80px;
-  left: 0%;
+    top: 40px;
+    left: 0%;
   }
+
   form {
     width: 100%;
+    margin: 25% auto;
   }
 
-    div.container {
-      width: 80%;
-    }
-
-  .ellipse {
-    /* display: none; */
+  div.container {
+    width: 80%;
   }
 
   .reset {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 30px;
     margin-top: 25%;
   }
 
   b {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 23px;
   }
 
   #reset {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 35px;
   }
 
@@ -263,7 +260,6 @@ top: 80px;
     padding: 5px 20px;
     line-height: 28px;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 14px;
   }
-
 }
