@@ -219,13 +219,13 @@ p {
 
 @media (max-width: 550px) {
   .cube {
-    top: 40px;
+    top: 0px;
     left: 0%;
   }
 
   form {
     width: 100%;
-    margin: 25% auto;
+    margin: 15% auto;
   }
 
   div.container {
@@ -262,4 +262,19 @@ p {
     border-radius: 4px;
     font-size: 14px;
   }
+}
+
+@media (max-width: 450px) {
+  .reset {
+      font-size: 25px;}
+
+      b {
+        font-size: 12px;
+      }
+
+            #psw-new,
+            #psw-confirm-new {
+              font-size: 10px;
+              padding: 5px 10px;
+            }
 }
