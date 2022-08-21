@@ -49,7 +49,7 @@ b {
 
 /* Full-width input fields */
 #psw-new,
-#psw-confirm-new {
+#psw-confirm-new, #email {
   border: 1px solid rgba(33, 37, 41, 0.5);
   border-radius: 4px;
   outline: 0;
@@ -81,13 +81,16 @@ form {
 
 .btn1,
 .btn2 {
-  padding: 4px 20px;
+  padding: 4px 15px;
   line-height: 28px;
   border-radius: 4px;
   font-size: 14px;
+  font-weight: 600;
   text-align: center;
   border: 1px solid #432499;
   text-decoration: none;
+  /* width: 25%; */
+
 }
 
 .btns .btn1 {
@@ -124,7 +127,7 @@ p {
 .cube {
   position: absolute;
   top: -10px;
-  left: 31%;
+  left: 28%;
   z-index: -1;
   max-width: 197px;
   max-height: 172px;
@@ -139,6 +142,48 @@ p {
   max-height: 420px;
   mix-blend-mode: overlay;
 }
+
+/* PROMPTS */
+
+.prompt {
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 2%;
+  width: 20%;
+  height: 60%;
+  border-radius: 25px;
+}
+
+
+#icon {
+  background-color: #ede3ff;
+  padding: 10%;
+  border-radius: 50%;
+  width: 48%;
+  /* margin-top: 20%; */
+  margin: 5% auto;
+}
+
+.text {
+  margin-top: 5%;
+font-size: 14px;
+text-align: center;
+  font-family: "Space Grotesk";
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+}
+
+#cube {
+  top: 55px;
+    left: 36%;
+}
+
 
 @media (max-width: 1260px) {
   .reset {
@@ -162,7 +207,7 @@ p {
   .btn1,
   .btn2,
   #psw-new,
-  #psw-confirm-new {
+  #psw-confirm-new, #email {
     padding: 5px 20px;
     line-height: 28px;
     border-radius: 4px;
@@ -182,6 +227,10 @@ p {
   .ellipse {
     bottom: 25%;
   }
+
+  .prompt {
+    height: 40%;
+  }
 }
 
 @media (max-width: 921px) {
@@ -198,6 +247,22 @@ p {
     top: 100px;
     left: 20%;
   }
+
+    .prompt {
+      height: 45%;
+      margin: 20% auto;
+      width: 45%;
+      padding: 5%;
+    }
+
+        #cube {
+          top: 68px;
+          left: 20%;
+        }
+
+        .text {
+          font-size: 18px;
+        }
 }
 
 @media (max-width: 768px) {
@@ -207,12 +272,12 @@ p {
   }
 
   form {
-    margin: 35% auto;
+    margin: 15% auto;
     width: 90%;
   }
 
   .cube {
-    top: 160px;
+    top: 40px;
     left: 15%;
   }
 }
@@ -260,12 +325,34 @@ max-height: 320px;
   .btn1,
   .btn2,
   #psw-new,
-  #psw-confirm-new {
+  #psw-confirm-new, #email {
     padding: 5px 20px;
     line-height: 28px;
     border-radius: 4px;
     font-size: 14px;
   }
+
+     .prompt {
+       height: 45%;
+       margin: 30% auto;
+       width: 55%;
+       padding: 6%;
+     }
+
+         #icon {
+           padding: 12%;
+           width: 58%;
+           margin: 5% auto;
+         }
+
+         .text {
+          font-size: 14px;
+        }
+
+        #cube {
+          top: 48px;
+          left: 10%;
+        }
 }
 
 @media (max-width: 450px) {
@@ -277,8 +364,18 @@ max-height: 320px;
       }
 
             #psw-new,
-            #psw-confirm-new {
+            #psw-confirm-new, #email {
               font-size: 10px;
               padding: 5px 10px;
             }
+
+            .prompt {
+              width: 70%;
+              height: 45%;
+            }
+
+                        #cube {
+                          top: 40px;
+                          left: 5%;
+                        }
 }
