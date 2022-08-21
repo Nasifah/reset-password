@@ -222,6 +222,10 @@ p {
     top: 0px;
     left: 0%;
   }
+.ellipse {
+top: 0px;
+max-height: 320px;
+}
 
   form {
     width: 100%;
