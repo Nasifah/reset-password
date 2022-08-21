@@ -218,29 +218,21 @@ p {
 }
 
 @media (max-width: 550px) {
-  body {
-    background-color: #fcfaff;
+
+  .cube {
+top: 80px;
+  left: 0%;
   }
   form {
-    margin: 0%;
     width: 100%;
-    height: 100%;
-    background-color: #fcfaff;
   }
-  .cube {
-    display: none;
-  }
+
+    div.container {
+      width: 80%;
+    }
 
   .ellipse {
-    display: none;
-  }
-
-  div.container {
-    width: 100%;
-    height: 100%;
-  }
-  main {
-    background-color: #fcfaff;
+    /* display: none; */
   }
 
   .reset {
@@ -260,7 +252,7 @@ p {
   }
 
   .btns {
-    gap: 20%;
+    gap: 10%;
     margin-top: 50%;
   }
 
@@ -273,4 +265,5 @@ p {
     border-radius: 4px;
     font-size: 18px;
   }
+
 }
