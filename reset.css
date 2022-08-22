@@ -5,7 +5,6 @@
 
 * {
   box-sizing: border-box;
-  /* width: 400px; */
 }
 
 body {
@@ -24,7 +23,8 @@ body {
 div.container {
   background-color: #fcfaff;
   width: 60%;
-  padding: 10%;
+  height: auto;
+  padding: 5% 10%;
   /* padding-left: 50px; */
   font-size: 18px;
   border-radius: 10px;
@@ -49,7 +49,9 @@ b {
 
 /* Full-width input fields */
 #psw-new,
-#psw-confirm-new, #email {
+#psw-confirm-new,
+#email,
+#psw-old {
   border: 1px solid rgba(33, 37, 41, 0.5);
   border-radius: 4px;
   outline: 0;
@@ -74,7 +76,7 @@ form {
   margin-left: auto;
   text-align: center;
   text-decoration: none;
-  margin-top: 40%;
+  margin-top: 30%;
   gap: 20%;
   justify-content: center;
 }
@@ -90,7 +92,6 @@ form {
   border: 1px solid #432499;
   text-decoration: none;
   /* width: 25%; */
-
 }
 
 .btns .btn1 {
@@ -124,9 +125,21 @@ p {
   margin-bottom: 15%;
 }
 
+a {
+  color: #432499;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+#forgot {
+  text-align: right;
+  font-size: 16px;
+  padding: 1%;
+}
+
 .cube {
   position: absolute;
-  top: -10px;
+  top: 0px;
   left: 28%;
   z-index: -1;
   max-width: 197px;
@@ -156,7 +169,6 @@ p {
   border-radius: 25px;
 }
 
-
 #icon {
   background-color: #ede3ff;
   padding: 10%;
@@ -166,10 +178,14 @@ p {
   margin: 5% auto;
 }
 
+.error {
+  background-color: #ffe3e3;
+}
+
 .text {
   margin-top: 5%;
-font-size: 14px;
-text-align: center;
+  font-size: 14px;
+  text-align: center;
   font-family: "Space Grotesk";
 }
 
@@ -181,9 +197,8 @@ text-align: center;
 
 #cube {
   top: 55px;
-    left: 36%;
+  left: 36%;
 }
-
 
 @media (max-width: 1260px) {
   .reset {
@@ -207,7 +222,9 @@ text-align: center;
   .btn1,
   .btn2,
   #psw-new,
-  #psw-confirm-new, #email {
+  #psw-confirm-new,
+  #email,
+  #psw-old {
     padding: 5px 20px;
     line-height: 28px;
     border-radius: 4px;
@@ -233,6 +250,13 @@ text-align: center;
   }
 }
 
+@media (max-width: 1024px) {
+  #forgot {
+    font-size: 9px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 921px) {
   .ellipse {
     bottom: 10%;
@@ -248,21 +272,27 @@ text-align: center;
     left: 20%;
   }
 
-    .prompt {
-      height: 45%;
-      margin: 20% auto;
-      width: 45%;
-      padding: 5%;
-    }
+  .prompt {
+    height: 45%;
+    margin: 20% auto;
+    width: 45%;
+    padding: 5%;
+  }
 
-        #cube {
-          top: 68px;
-          left: 20%;
-        }
+  #cube {
+    top: 68px;
+    left: 20%;
+  }
 
-        .text {
-          font-size: 18px;
-        }
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 780px) {
+  #forgot {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -287,13 +317,13 @@ text-align: center;
     top: 0px;
     left: 0%;
   }
-.ellipse {
-max-height: 320px;
-}
+  .ellipse {
+    max-height: 320px;
+  }
 
   form {
     width: 100%;
-    margin: 15% auto;
+    margin: 20% auto;
   }
 
   div.container {
@@ -303,7 +333,7 @@ max-height: 320px;
   .reset {
     font-size: 30px;
     line-height: 30px;
-    margin-top: 25%;
+    margin-top: 5%;
   }
 
   b {
@@ -318,63 +348,68 @@ max-height: 320px;
 
   .btns {
     gap: 10%;
-    margin-top: 50%;
+    margin-top: 20%;
   }
 
   .btn1,
   .btn2,
   #psw-new,
-  #psw-confirm-new, #email {
+  #psw-confirm-new,
+  #email,
+  #psw-old {
     padding: 5px 20px;
     line-height: 28px;
     border-radius: 4px;
     font-size: 14px;
   }
 
-     .prompt {
-       height: 45%;
-       margin: 30% auto;
-       width: 55%;
-       padding: 6%;
-     }
+  .prompt {
+    height: 45%;
+    margin: 30% auto;
+    width: 55%;
+    padding: 6%;
+  }
 
-         #icon {
-           padding: 12%;
-           width: 58%;
-           margin: 5% auto;
-         }
+  #icon {
+    padding: 12%;
+    width: 58%;
+    margin: 5% auto;
+  }
 
-         .text {
-          font-size: 14px;
-        }
+  .text {
+    font-size: 14px;
+  }
 
-        #cube {
-          top: 48px;
-          left: 10%;
-        }
+  #cube {
+    top: 48px;
+    left: 10%;
+  }
 }
 
 @media (max-width: 450px) {
   .reset {
-      font-size: 25px;}
+    font-size: 25px;
+  }
 
-      b {
-        font-size: 12px;
-      }
+  b {
+    font-size: 12px;
+  }
 
-            #psw-new,
-            #psw-confirm-new, #email {
-              font-size: 10px;
-              padding: 5px 10px;
-            }
+  #psw-new,
+  #psw-confirm-new,
+  #email,
+  #psw-old {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
 
-            .prompt {
-              width: 70%;
-              height: 45%;
-            }
+  .prompt {
+    width: 70%;
+    height: 45%;
+  }
 
-                        #cube {
-                          top: 40px;
-                          left: 5%;
-                        }
+  #cube {
+    top: 40px;
+    left: 5%;
+  }
 }
